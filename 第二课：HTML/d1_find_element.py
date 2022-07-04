@@ -21,7 +21,10 @@ print(elem)
 print(elem.tag_name)
 
 # 属性、方法
+# 输入
 print(elem.send_keys('王者荣耀'))
+
+# 获取到该元素的上一级
 print(elem.parent)
 
 driver.quit()
