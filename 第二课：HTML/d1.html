@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web自动化</title>
+    <style type="text/css">
+        h4{
+            color:red
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h4>静夜思 <span>李白</span></h4>
+
+    <!--段落-->
+    <p>窗前明月光</p>
+    <p>举头望明月</p>
+    <h4>你是真的吊</h4>
+</div>
+<a href="http://www.baidu.com">
+    <img src="https://img2.baidu.com/it/u=509743012,3188823692&fm=253&fmt=auto&app=138&f=JPEG?w=498&h=500">
+</a>
+<!--    在一个html里面嵌套另一个页面-->
+<div>
+    <iframe src="http://www.baidu.com" width="800" height="600"></iframe>
+</div>
+<p>长路漫漫，唯剑作伴</p>
+<ul>
+    <li>子非鱼</li>
+    <li>彦祖</li>
+    <li>买瑞东</li>
+    <li>真的很厉害</li>
+</ul>
+<!--用户输入-->
+<form action="http://httpbin.org/post" method="post">
+    用户名：<input name="username" type="text" placeholder="请输入用户名">
+    密码：<input name="password" type="password" placeholder="请输入密码">
+    <div>
+        你最喜欢的歌手：
+        <input type="radio" name="favor_singer" value="zhoujielun">周杰伦
+        <input type="radio" name="favor_singer" value="wuyanzu">吴彦祖
+        <input type="radio" name="favor_singer" value="mairuidong">买瑞东
+    </div>
+
+    <div>
+        你最喜欢的歌手：
+        <input type="checkbox" name="favor_singer">周杰伦
+        <input type="checkbox" name="favor_singer">吴彦祖
+        <input type="checkbox" name="favor_singer">买瑞东
+    </div>
+
+    <div>
+        选择头像：<input name="avatar" type="file">
+    </div>
+    选择你的爱好：
+    <select>
+        <option>钓鱼</option>
+        <option>打游戏</option>
+        <option>干饭</option>
+        <option>搞钱</option>
+    </select>
+    <input type="submit">
+</form>
+
+</body>
+</html>
