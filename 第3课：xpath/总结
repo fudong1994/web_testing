@@ -1,0 +1,65 @@
+绝对路径：从根目录开始，root
+相对路径：在一个路径下，另外的路径以这个路径为参照
+
+所以相对路径和绝对路径都是可以找到需要的文件或者html元素
+
+一般不用绝对路径，用相对路径查找元素
+
+为什么？
+- 前端工程师：改页面效果，加一个特效，加几个div标签
+- 绝对路径太长了，不便于维护
+
+绝对路径：/html/body/
+相对路径：//
+
+填写 xpath: f12，点击 elememt 选项，ctrl+f
+
+xpath 语法：//input[@name="q"]
+抽象后的语法：//标签名[@属性名=“属性值”]
+
+使用xpath 查找元素原则：哪个特征最明显，就用哪个
+组合条件：
+//input[@name="q" and @type="text" and size="12"]
+
+元素的 id 是唯一的：同一个页面中，不可能存在两个元素id相等
+
+子代元素：//div[@id="anony-nav"]/div[@class="anony-srh"]
+子孙代元素：//div[@id="anony-nav"]//div[@class="anony-srh"]
+
+通过儿子找父亲：//div[@class="anony-srh"]/../../..
+
+xpath 用法：
+1、//input[@name=""]
+2、and 组合属性
+3、//div/input 单斜杠通过父亲找儿子
+4、//div//input 通过祖先找子孙
+5、.. 儿子找父亲
+6、//a[text()="豆瓣读书"] 通过文本
+    -text() 不用 @，因为他不是元素
+7、text() 经常和 contains组合使用 //a[contains(text(),"豆瓣读书")]
+//a[contains(@class,"anony")]
+8、索引有两个注意项：1、加括号，2、从1开始 (//a[contains(text(),"豆瓣读书")])[1]
+9、following-sibling、preceding-silling、ancestor
+a//ancestor::div[@id="anony-nav"]
+10、* 表示通配符 //*[@name=""]
+
+轴：通过一个元素找到另一个元素
+
+八大元素定位，到底用哪个？
+- id
+- name
+- class
+- xpath
+- css
+- link
+- partial
+- tagname
+
+元素属性是会动态变化的
+1、属性中间如果有数字
+2、随机的字符串:dfsgsdfsdfasfd
+
+等待 3 种方式
+1、强制等待 time.sleep()，暂停代码执行
+2、隐性等待 全局只需要设置一次
+3、显性等待

@@ -47,3 +47,4 @@ try:
 except:
     print("元素不存在")
 
+driver.quit()
