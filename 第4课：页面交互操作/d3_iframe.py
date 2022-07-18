@@ -22,4 +22,10 @@ driver.switch_to.frame(iframe)  # iframe 的 element对象
 elem = driver.find_element_by_xpath("//h1")
 print(elem)
 
+# 退回主页面
+driver.switch_to.default_content()
+
+# 退回父级iframe
+# driver.switch_to.parent_frame()
+
 driver.quit()

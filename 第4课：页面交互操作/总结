@@ -9,4 +9,18 @@
 用起来比较复杂
 
 三大切换
-窗口切换
+窗口切换 driver.switch_to.window(driver.window_handles[-1])
+iframe: name, webelement, index, 退出
+alert: a = driver.switch_to.alert  a.accept()
+
+鼠标操作：
+1、单击 e.click()
+2、悬停，移动 ac.move_to_element(elem).perform()
+3、双击 ac.double_click(elem).perform()
+4、右击 ac.context_click(elem).perform()
+5、拖拽 ac.drag_and_drop(elem1,elem2).perform()
+
+# 键盘操作
+# select
+# 文件上传
+# js

@@ -5,6 +5,7 @@
 """
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
@@ -19,7 +20,8 @@ driver.get("http:www.baidu.com")
 # elem = driver.find_element_by_id("kw")
 
 wait = WebDriverWait(driver, 10)
-locator = ['id', 'kw']
+# 元素定位的表达式
+locator = [By.ID, 'kw']
 # 等待某个元素加载
 elem = wait.until(expected_conditions.presence_of_element_located(locator))
 # 等待元素可见

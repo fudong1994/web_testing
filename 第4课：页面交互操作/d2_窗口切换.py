@@ -22,7 +22,7 @@ elem.submit()
 
 # 查找京东
 try:
-    driver.find_element_by_xpath('//span[text()="京东"]').click()
+    driver.find_element('xpath', '//span[text()="京东"]').click()
 except Exception as e:
     print(e)
     print("元素不存在，请检查")
