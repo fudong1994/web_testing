@@ -11,3 +11,31 @@ driver.find_element(By.CLASS_NAME,'abc')
 1、不灵活
 2、即将被 selenium 4.0 官方弃用
 derver.find_element_by_class_name('abc')
+
+selenium 是对一些 js 指令的封装，
+selenium 当中只封装了部分浏览器操作。
+有一些操作用 selenium 完成不了，直接发送 js 代码
+
+js 代码
+打印，console.log
+alert("我是吴彦祖")
+
+定义变量：var name = 'yanzu'
+let name = 'yanzu'
+
+数据类型。
+
+条件语句
+if (age > 18){
+    alert("已经成年");
+}else if(age == 18){
+    alert("要成年了");
+}else{
+    alert("未成年")
+}
+
+function 函数
+function run(){
+    let name = "awen";
+    return name;
+}

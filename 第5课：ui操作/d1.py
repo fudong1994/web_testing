@@ -32,5 +32,8 @@ driver.find_element('xpath', '//span[text()="京东"]').click()
 wait = WebDriverWait(driver, 2)
 wait.until(expected_conditions.new_window_is_opened(all_handles))
 
+# 手动切
+driver.switch_to.window(driver.window_handles[-1])
+
 # 关闭浏览器
 driver.quit()
