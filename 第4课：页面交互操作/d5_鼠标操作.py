@@ -25,3 +25,5 @@ time.sleep(5)
 # 简单
 # h2 = driver.find_element_by_xpath("//h2")
 # h2.click()
+
+driver.quit()
